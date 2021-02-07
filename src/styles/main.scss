@@ -1,0 +1,16 @@
+@import "variables";
+@import "typography";
+
+body {
+  color: $text;
+  background-color: $background;
+  margin: 0;
+}
+
+@import "app";
+@import "navbar";
+@import "footer";
+@import "authforms";
+@import "dashboard";
+@import "card";
+@import "home";

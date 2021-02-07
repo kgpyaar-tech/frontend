@@ -1,0 +1,58 @@
+.dashboard {
+  text-align: center;
+
+  .form {
+    button {
+      align-self: center;
+    }
+
+    &.expand {
+      form {
+        flex-direction: row;
+
+        input {
+          margin-right: 1rem;
+        }
+
+        button {
+          margin-top: 0;
+        }
+      }
+
+      .results {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    }
+
+    button {
+      font-size: 20px;
+      color: $text;
+      font-family: "Quicksand", sans-serif;
+      border: none;
+      border-radius: 12px;
+      outline: 0;
+      background-color: $primary;
+      color: $background;
+      width: max-content;
+      padding: 0.5rem 2rem;
+      cursor: pointer;
+      transition: all 0.25s ease-in-out;
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      margin: 1rem 0 0;
+      &:hover {
+        transform: scale(1.05) translateY(-4px);
+        box-shadow: 0px 10px 20px rgba($color: $text, $alpha: 0.5);
+      }
+      &:active {
+        transform: scale(0.95) translateY(0);
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+  .wrapper {
+    flex-grow: 1;
+    max-width: 1000px;
+    display: flex;
+    padding: 0.5rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    li {
+      margin: 0 1rem;
+      padding: 1rem;
+      a {
+        text-decoration: none;
+        color: $text;
+        &.active {
+          color: $primary;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
