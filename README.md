@@ -2,9 +2,7 @@
 
 > चेहरा प्यार का
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/87782827-e7fc-4ffd-a06c-9eea6e016746/deploy-status)](https://kgpyaar-beta.netlify.app/)
-
-Deployed at: [:earth_asia: kgpyaar-beta.netlify.app](https://kgpyaar-beta.netlify.app/)
+Deployed at: [:earth_asia: kgpyaar.fun](https://kgpyaar.fun/)
 
 ## Dev instructions
 
