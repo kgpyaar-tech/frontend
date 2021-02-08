@@ -3,6 +3,21 @@
   max-width: 1000px;
   display: flex;
 
+  @include sm {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    .illus {
+      img {
+        max-width: 80vw;
+      }
+    }
+
+    .content {
+      margin-top: 2rem;
+    }
+  }
+
   .content {
     flex-direction: row;
 

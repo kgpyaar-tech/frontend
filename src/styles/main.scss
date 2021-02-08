@@ -1,6 +1,12 @@
 @import "variables";
 @import "typography";
 
+@mixin sm {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
 body {
   color: $text;
   background-color: $background;

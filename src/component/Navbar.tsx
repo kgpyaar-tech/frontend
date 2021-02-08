@@ -17,19 +17,17 @@ export default function Navbar() {
               Home
             </NavLink>
           </li>
-          { auth?.user ? (
-            <React.Fragment>
+          {auth?.user ? (
+            <>
               <li>
                 <NavLink exact to="/dashboard">
                   Dashboard
                 </NavLink>
               </li>
-              <li onClick={ () => auth?.signout(() => console.log("User signed out"))}>
-                Signout
-              </li>
-            </React.Fragment>
+              <li onClick={() => auth?.signout(() => console.log("User signed out"))}>Signout</li>
+            </>
           ) : (
-            <React.Fragment>
+            <>
               <li>
                 <NavLink exact to="/login">
                   Login
@@ -40,8 +38,8 @@ export default function Navbar() {
                   Register
                 </NavLink>
               </li>
-          </React.Fragment>
-          ) }
+            </>
+          )}
         </ul>
       </div>
     </nav>

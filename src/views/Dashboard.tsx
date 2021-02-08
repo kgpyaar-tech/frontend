@@ -19,7 +19,7 @@ function Dashboard() {
   const [isSearched, setIsSearched] = useState(false);
   const { register, handleSubmit } = useForm();
   const [searchResult, setSearchResult] = useState<inquire[]>([]);
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   const onSubmit = (data: inquire) => {
     setIsSearched(true);
@@ -37,7 +37,7 @@ function Dashboard() {
   return (
     <div className="authform dashboard">
       <div className={`form ${isSearched ? "expand" : ""}`}>
-        <h1> This page would be available from 10th February</h1>
+        <h1> The option to send hearts would be available from 11th February</h1>
         {/* <h1>Search</h1>
         {message}
         <form onSubmit={handleSubmit(onSubmit)}>

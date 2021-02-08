@@ -2,7 +2,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0;
+  padding: 2rem 0;
   .wrapper {
     flex-grow: 1;
     max-width: 1000px;
@@ -10,12 +10,18 @@ nav {
     padding: 0.5rem 2rem;
     align-items: center;
     justify-content: space-between;
+
+    @include sm {
+      max-width: 80vw;
+      flex-direction: column;
+    }
   }
   ul {
     display: flex;
     list-style: none;
     padding: 0;
     li {
+      cursor: pointer;
       margin: 0 1rem;
       padding: 1rem;
       a {

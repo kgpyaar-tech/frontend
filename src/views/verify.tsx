@@ -46,7 +46,7 @@ function Verify() {
       console.log("signup succex");
 
       if(response == undefined) setMessage("Server is down, please try again later");
-      if(response.status == 200 ) history.push("/login");
+      else if(response.status == 201 ) history.push("/login");
       else setMessage(response.data.message);
     });
   };
